@@ -23,22 +23,30 @@ While mean and median PSI measurements are the same across the three lots, there
 Overall the data meet MechaCar design specifications regarding variance in PSI. However, a closer look grouped by manufacturing lot indicates a problem specifically with lot 3. 
 
 ## T-Tests on Suspension Coils
-To test for difference from the population mean of 1500psi, there are 4 t-tests. Given that we have no a priori hypothesis that any difference would be on one side or other of the distribution, we will use a 2-tailed t-test, with $\alpha$ set to 0.05 as would be standard for single tests. 
+To test for difference from the population mean of 1500psi, there are 4 t-tests. Given that we have no a priori hypothesis that any difference would be on one side or other of the distribution, we will use a 2-tailed t-test, with α set to 0.05 as would be standard for single tests. 
 
 For the three lots in question combined:
+
 ![t-test all lots](All_Lots.png)
-A mean of 1498.78 is slightly below 1500 psi, but the upper bound of the 95% Confidence Interval crosses 1500, at 1500.053. Thus the p-value is 0.06, and the difference is no statistically significant given $\alpha$=0.05.
+
+A mean of 1498.78 is slightly below 1500 psi, but the upper bound of the 95% Confidence Interval crosses 1500, at 1500.053. Thus the p-value is 0.06, and the difference is no statistically significant given α=0.05. 
 
 For Lot 1:
+
 ![t-test Lot 1](Lot_1.png)
+
 The mean is exactly 1500, matching the population mean.
 
 For Lot 2:
+
 ![t-test Lot 2](Lot_2.png)
+
 The mean is 1500.2. The population mean of 1500 falls within the 95% Confidence Interval, and the difference is not statistically significant (p=0.6).
 
 For Lot 3:
+
 ![t-test Lot 3](Lot_3.png)
+
 The mean is 1496.14. The upper bound of the 95% CI is 1499.85. Thus the true population mean of 1500 is not included. The p-value is 0.04, and we consider the measure of PSI in specifically Lot 3 to be statistically different from the expected mean of 1500. 
 
 ## Study Design: MechaCar vs. Competition
